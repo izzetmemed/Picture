@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="big-img">
+           
+            <img src="https://www.annapurnaview.com/uploads/medium/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW.jpg" >
+            <span class="id-main">1</span>
+        </div>
+        <div class="small-img"> <div class="img-div">
+            <img src="https://www.annapurnaview.com/uploads/medium/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW.jpg" >
+            <span class="id ">1</span></div>
+            
+            
+            <div class="img-div">
+            <img src="https://cdn.hswstatic.com/gif/10-breathtaking-views-1-orig.jpg" >
+            <span class=" id ">2</span></div> <div class="img-div">
+            <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/275c594a-Sarangkot-Sunrise-View/Ng%E1%BA%AFmB%C3%ACnhMinhSarangkot.jpg" >
+            <span class="id ">3</span></div><div class="img-div">
+            <img src="https://nepaltraveller.com/images/main/1612083299.sidetrackimage1024px-Sarangkot_morning_view.jpg" >
+            <span class="id ">4</span></div> -->
+        </div>
+
+    </div>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+    <script>
+        window.onload=function(){
+            let index= new makeImg();
+            let api=new getData();
+            index.create();
+
+            api.get(()=>{
+                index.contact(api.xhr.data);},
+                ()=>{
+                index.click(api.xhr.data);
+                }
+            );
+        }
+    </script>
+</body>
+</html>
